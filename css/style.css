@@ -1,0 +1,304 @@
+html {
+    height: 300vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: auto;
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    background-image: url('../images/chicago.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+
+.firstLastName {
+    margin: auto;
+    text-align: center;
+    font-size: 64px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #edebe4;
+}
+
+.firstLastNameSummary {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    color: #edebe4;
+}
+
+.firstLastNameDiv {
+    position: relative;
+    margin: auto;
+    padding-top: 20vh;
+    width: 100vw;
+    height: 20vh;
+    padding-bottom: 60vh;
+}
+
+div.stickyLinks {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100vw;
+    height: 20px;
+    top: 0;
+    background-color: rgb(41, 85, 85);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+a 
+{
+    text-decoration: solid;
+    color: #edebe4;
+    font-size: 18px;
+}
+
+.aboutMeContainer {
+    width: 100vw;
+    height: 45vh;
+    background-color: whitesmoke;
+}
+
+.aboutMeTitle
+{
+    padding-top: 4vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 2vh;
+    border-bottom: 4px solid rgb(41, 85, 85);
+    color: rgb(41, 85, 85);
+    text-align: center;
+    font-size: 26px;
+}
+
+.aboutMeSkillsContainer {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    width: 60%;
+    height: 10%;
+}
+
+.aboutMeSkillOne {
+    width: 25%;
+    height: 100%;
+    float: left;
+    
+}
+
+.aboutMeSkillOneImage {
+    display: block;
+    max-width: 100%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.aboutMeSkillOneText {
+    font-size: 22px;
+    text-align: center;
+    color: rgb(41, 85, 85);
+}
+
+.aboutMeSkillTwo {
+    width: 25%;
+    height: 100%;
+    float: left;
+    
+}
+
+.aboutMeSkillTwoImage {
+    display: block;
+    max-width: 100%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.aboutMeSkillTwoText {
+    font-size: 22px;
+    text-align: center;
+    color: rgb(41, 85, 85);
+}
+
+.aboutMeSkillThree {
+    width: 25%;
+    height: 100%;
+    float: left;
+    
+}
+
+.aboutMeSkillThreeImage {
+    display: block;
+    max-width: 100%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.aboutMeSkillThreeText {
+    font-size: 22px;
+    text-align: center;
+    color: rgb(41, 85, 85);
+}
+
+.aboutMeSkillFour {
+    width: 25%;
+    height: 100%;
+    float: left;
+    
+}
+
+.aboutMeSkillFourImage {
+    display: block;
+    max-width: 100%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.aboutMeSkillFourText {
+    font-size: 22px;
+    text-align: center;
+    color: rgb(41, 85, 85);
+}
+
+.aboutMeParagraphContainer {
+    box-sizing: border-box;
+    height: 16vh;
+    width: 100vw;
+}
+
+.aboutMeHeader {
+    margin: 0;
+    padding-top: 1vh;
+    width: 16%;
+    padding-right: 2%;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(41, 85, 85);
+    float: left;
+}
+
+.aboutMeParagraph {
+    width: 60%;
+    padding-left: 2%;
+    padding-right: 18%;
+    height: auto;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(41, 85, 85);
+    border-left: rgb(41, 85, 85) solid .25vw;
+    float: left;
+    line-height: 28px;
+}
+
+.aboutMeHorLine {
+    width: 180px;
+    height: 3px;
+    background-color: rgb(41, 85, 85);
+}
+
+.projectLinks {
+    width: 100vw;
+    height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.projectLinksHREF {
+    color:rgb(41, 85, 85);
+}
+
+.propulsionProjectImage{
+    padding: 4px;
+    border:rgb(177, 177, 177) solid 4px;
+    width: 400px;
+    display: table-cell;
+}
+
+
+
+
+
+
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: whitesmoke;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+
+  .modalHeaderTitle {
+      color: rgb(32, 32, 32)
+  }
+
+  .propulsionImageDescription {
+      margin-top: 6px;
+      font-size: 16px;
+      color: rgb(97, 97, 97);
+  }
+
+  .propulsionParagraph
+  {
+      margin-left: 10%;
+      margin-right: 10%;
+      text-align: left;
+      font-size: 24px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+  #mandelbrotPerformance {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #mandelbrotPerformance td,  #mandelbrotPerformance th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+  }
+
+  #mandelbrotPerformance tr:nth-child(odd) { background-color: rgb(207, 214, 221);}
+
+  #mandelbrotPerformance th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+  }
