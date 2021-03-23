@@ -112,7 +112,9 @@
                     <span class="close">&times;</span>
                     <h1 class="modalHeaderTitle">Propulsion<br>
                         <hr>
-                        </h1>
+                    </h1>
+
+                    <p class="propulsionParagraph">Repo Link: <a href="https://github.com/rottenroddan/Propulsion" style="color: gray;">https://github.com/rottenroddan/Propulsion</a></p>
 
                     <img src="images/image_itt_1500.PNG" alt="Mandelbrot" style="width:80%; height:80%;max-width:800px;">
                     <p class="propulsionImageDescription">Image of Mandelbrot above the main disk with period 8. Image was generated
@@ -121,10 +123,10 @@
 
                     <p class="propulsionParagraph">     &emsp; Propulsion, was a Numerical/CUDA project I started before my final semester in the fall
                             of 2020. The project (being a self-project) has gone through many technical changes as more 
-                            research has been done on paticular subjects. Firsly, I'd like to mention this project is not
+                            research has been done on paticular subjects. Firstly, I'd like to mention this project is not
                             meant to rival libraries like cuBLAS or Boost. It is simply created to apply my understanding, 
                             analyze and research more about the numerical operations that have a huge impact in todays algorithms
-                            like Machine Learning. <br>
+                            like Machine Learning/Artificial Intelligence. <br>
 
                             &emsp; In the start, I was mostly focused on creating CUDA Kernels to solve simple matrix operations 
                             like addition/subtraction/schurs product. As I got the hang of using CUDA from samples provided online,
@@ -173,15 +175,15 @@
 
                     <h1 class="modalHeaderTitle">Tensor Operations<br></h1>
 
-                    <p class="propulsionParagraph">This class is currently mostly work in progress. Uses packed template arguments to allow
+                    <p class="propulsionParagraph">     &emsp;This class is currently mostly work in progress. Uses packed template arguments to allow
                         the user to build an any size dimension tensor. The tensor class contains a container which holds unique pointers to
                         Matrices. Since the operations I'm dealing with, I found it beneficial to just reuse the Matrix class rather than 
                         creating a new array of values. <br>
                         &emsp; Firstly, I was able to utilize CUDA's streams to create async copies and kernel launches. Along with less overhead, 
                         Tensor::cudaAdd was able to achieve a 3x performance gain on my original implementations. Below you can see the Nsight data. 
                         For the first ~40s, 6 additions are done on two Tensors of size (5.76GB). This naive method doesn't use streams, and therefore 
-                        a lot of time is wasted on non-sync memory transfers. From ~41s and on, streams is enabled for 6 Additions of the same 5.76GB 
-                        of data. This method is clearly faster. You can see more on my Github on how I implemented this!    
+                        a lot of time is wasted on non-sync memory transfers. From 41s on, streams is enabled for 6 Additions of the same 5.76GB 
+                        of data. This method is clearly faster as the 6 additions finish in 13s vs ~40s. You can see more on my Github on how I implemented this!    
                     </p>
 
                     <img src="images/tensorAdditionStreamVsNonStreamOne.PNG" style="width:80%;height:80%;max-width:1200px;">
