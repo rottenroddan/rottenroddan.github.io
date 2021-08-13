@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="css/style.css">
-<body>    
-    <head>
-        <div class="firstLastNameDiv">
-            <h1 class="firstLastName" id="firstLastName">Welcome, I'm Steven Roddan</h1>
-            <h2 class="firstLastNameSummary">I'm an up and coming software engineer interested
-                                             in Operating Systems, Machine Learning and Numerical
-                                             Analysis. </h2>
-        </div>
-    </head>
+<body>
+    <div class="firstLastNameDiv">
+        <h1 class="firstLastName" id="firstLastName">Welcome, I'm Steven Roddan</h1>
+        <h2 class="firstLastNameSummary">I'm an up and coming software engineer interested
+                                        in Operating Systems, Machine Learning and Numerical
+                                        Analysis. </h2>
+    </div>
+    
     
     <div class="stickyLinks">
         <a href="#aboutMeContainer">About Me &nbsp;</a>
@@ -17,277 +16,282 @@
         <!---<a href="#firstLastName">Contact Me &nbsp;</a>--->   
     </div>
 
-    <div class="aboutMeContainer" id="aboutMeContainer">
-        <div class = "aboutMeTitle">
-            <h1>
-                About Me
-            </h1>
-        </div>
+    <div class="mainPageDiv">  
 
-        <div class="aboutMeSkillsContainer">
-            
-
-            <div class="aboutMeSkillOne">
-                <img src="images/lightbulb.png" alt="Lightbulb" class="aboutMeSkillOneImage">
-                <h1 class="aboutMeSkillOneText">Problem Solver</h1>
+        <div class="aboutMeContainer" id="aboutMeContainer">
+            <div class = "aboutMeTitle">
+                <h1>
+                    About Me
+                </h1>
             </div>
 
-            <div class="aboutMeSkillTwo">
-                <img src="images/clock.png" alt="Clock" class="aboutMeSkillTwoImage">
-                <h1 class="aboutMeSkillTwoText">Multitasking</h1>
-            </div>
+            <div class="aboutMeSkillsContainer">
+                
 
-            <div class="aboutMeSkillThree">
-                <img src="images/graph.png" alt="Graph To Represent Objects" class="aboutMeSkillThreeImage">
-                <h1 class="aboutMeSkillThreeText">OOAD</h1>
-            </div>
-
-            <div class="aboutMeSkillFour">
-                <img src="images/teamwork.png" alt="Gears for Teamwork" class="aboutMeSkillFourImage">
-                <h1 class="aboutMeSkillFourText">Teamwork</h1>
-            </div>
-        </div>
-
-        <div class="aboutMeParagraphContainer">
-            <h1 class="aboutMeHeader">Summary<br></h1>
-            <p class="aboutMeParagraph">
-                                &emsp; Hello, My name is Steven Roddan and I'm a Bachelor of Science in 
-                                Computer Science from Northern Illinois University. My main topics of interest
-                                in Computer Science are Machine Learning, Operating Systems, Numerical
-                                Analysis and Algorithms. Experience with OOAD principles and an understanding
-                                of Agile/Scrum developement.<br>
-
-                                &emsp; While I'm interested in the whole design process of modern applications,
-                                I tend to appreciate code that is very well optimized for its purpose. One of my
-                                projects mentioned below illustrates this, as the project is aimed at numerical 
-                                operations in C++. In short, it investigates multithreading, SIMD(AVX2) and CUDA
-                                for various algorithms to compare the pros and cons of each.
-                                <br>                                
-
-                                &emsp; Typically when I'm not programming, you can find me playing video games,
-                                watching documentaries/educational videos and enjoying the outdoors with friends
-                                and family. Recently (since COVID) have found a new hobby with biking trails, 
-                                so you could say I'm looking forward to the Spring/Summer. <br>  
-            </p>
-        </div>
-
-        <div class="aboutMeParagraphContainer">
-            <h1 class="aboutMeHeader">Skills<br></h1>
-            <p class="aboutMeParagraph">
-                <b>Proficient Languages:</b> C++(std, ~CUDA), Python(Numpy, Tensorflow/Keras), PHP,
-                    MYSQL(MariaDB).<br>
-                <b>Familiar Languages:</b> Java, R, Javascript(jQuery), HTML/CSS. Julia, Assembly.<br>
-                <b>Operating Systems:</b> Windows, Linux/Ubuntu.<br>
-                <b>Developement tools:</b> Github, Visual Studio Code, CLion, phpMyAdmin, PuTTY.<br>
-                <b>Soft Skills:</b> Problem Solving, Motivation, Dependability, Positivity.
-            </p>
-        </div>
-    </div>
-
-    <div class="projectsContainer" id="projectsContainer">
-        <div class = "aboutMeTitle">
-            <h1>
-                Projects
-            </h1>
-        </div>
-
-        <div class = "projectLinks">
-
-
-
-             <!-- Trigger/Open The Modal -->
-            <a class="projectLinksHREF" id="myBtn" href="#projectsContainer">
-                <div class="propulsionProjectImage">
-                    <img src="images/purpleBigItt.PNG" width="360" height="360" alt="Propulsion Mandelbrot Image">
-                    <h1 class="projectHeadersImages"><b>Propulsion</b></h1>
-                    <p>A self project aimed at studying CUDA and costly Numerical Operations</p>
+                <div class="aboutMeSkillOne">
+                    <img src="images/lightbulb.png" alt="Lightbulb" class="aboutMeSkillOneImage">
+                    <h1 class="aboutMeSkillOneText">Problem Solver</h1>
                 </div>
-                </a>
 
-            <!-- The Modal -->
-            <div id="modalProjectPropulsion" class="modal">
+                <div class="aboutMeSkillTwo">
+                    <img src="images/clock.png" alt="Clock" class="aboutMeSkillTwoImage">
+                    <h1 class="aboutMeSkillTwoText">Multitasking</h1>
+                </div>
 
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h1 class="modalHeaderTitle">Propulsion<br>
-                        <hr>
-                    </h1>
+                <div class="aboutMeSkillThree">
+                    <img src="images/graph.png" alt="Graph To Represent Objects" class="aboutMeSkillThreeImage">
+                    <h1 class="aboutMeSkillThreeText">OOAD</h1>
+                </div>
 
-                    <p class="propulsionParagraph">Repo Link: <a href="https://github.com/rottenroddan/Propulsion" style="color: gray;">https://github.com/rottenroddan/Propulsion</a></p>
+                <div class="aboutMeSkillFour">
+                    <img src="images/teamwork.png" alt="Gears for Teamwork" class="aboutMeSkillFourImage">
+                    <h1 class="aboutMeSkillFourText">Teamwork</h1>
+                </div>
+            </div>
 
-                    <img src="images/image_itt_1500.PNG" alt="Mandelbrot" style="width:80%; height:80%;max-width:800px;">
-                    <p class="propulsionImageDescription">Image of Mandelbrot above the main disk with period 8. Image was generated
-                                                        via the Mandelbrot class with 1500 iterations per pixel value. </p>
+            <div class="aboutMeParagraphContainer">
+                <h1 class="aboutMeHeader">Summary<br></h1>
+                <p class="aboutMeParagraph">
+                                    &emsp; Hello, My name is Steven Roddan and I'm a Bachelor of Science in 
+                                    Computer Science from Northern Illinois University. My main topics of interest
+                                    in Computer Science are Machine Learning, Operating Systems, Numerical
+                                    Analysis and Algorithms. Experience with OOAD principles and an understanding
+                                    of Agile/Scrum developement.<br>
+
+                                    &emsp; I'm am very interested in the whole design process of modern applications.
+                                    Ideally I would like to find a job that challenges me everyday with new topics/technology 
+                                    to better myself. I enjoy being motivated to learning something new. One of my
+                                    projects mentioned below illustrates this, as I've never had a formal education on CUDA or 
+                                    high performance compute. The project is aimed at numerical operations in C++. In short, 
+                                    it investigates multithreading, SIMD(AVX2) and CUDA for various algorithms to compare the 
+                                    pros and cons of each.
+                                    <br>                                
+
+                                    &emsp; Typically when I'm not programming, you can find me playing video games,
+                                    watching documentaries/educational videos and enjoying the outdoors with friends
+                                    and family. Recently I have found a new hobby with biking trails, 
+                                    so you could say I'm looking forward to the Spring/Summer. <br>  
+                </p>
+            </div>
+
+            <div class="aboutMeParagraphContainer">
+                <h1 class="aboutMeHeader">Skills<br></h1>
+                <p class="aboutMeParagraph">
+                    <b>Proficient Languages:</b> C++(std, ~CUDA), Python(Numpy, Tensorflow/Keras), PHP,
+                        MYSQL(MariaDB).<br>
+                    <b>Familiar Languages:</b> Java, R, Javascript(jQuery), HTML/CSS. Julia, Assembly.<br>
+                    <b>Operating Systems:</b> Windows, Linux/Ubuntu.<br>
+                    <b>Developement tools:</b> Github, Visual Studio Code, CLion, phpMyAdmin, PuTTY.<br>
+                    <b>Soft Skills:</b> Problem Solving, Motivation, Dependability, Positivity.
+                </p>
+            </div>
+        </div>
+
+        <div class="projectsContainer" id="projectsContainer">
+            <div class = "aboutMeTitle">
+                <h1>
+                    Projects
+                </h1>
+            </div>
+
+            <div class = "projectLinks">
 
 
-                    <p class="propulsionParagraph">     &emsp; Propulsion, was a Numerical/CUDA project I started before my final semester in the fall
-                            of 2020. The project (being a self-project) has gone through many technical changes as more 
-                            research has been done on paticular subjects. Firstly, I'd like to mention this project is not
-                            meant to rival libraries like cuBLAS or Boost. It is simply created to apply my understanding, 
-                            analyze and research more about the numerical operations that have a huge impact in todays algorithms
-                            like Machine Learning/Artificial Intelligence. <br>
 
-                            &emsp; In the start, I was mostly focused on creating CUDA Kernels to solve simple matrix operations 
-                            like addition/subtraction/schurs product. As I got the hang of using CUDA from samples provided online,
-                            I started looking more at the numerical operations that would benefit Machine Learning the most. From this
-                            point on, I started creating a Matrix class with various methods to support numerical operations. This 
-                            class also uses smart pointers to handle memory. You can see more on my Github about all the various methods.<br>
-                    </p>
+                <!-- Trigger/Open The Modal -->
+                <a class="projectLinksHREF" id="myBtn" href="#projectsContainer">
+                    <div class="propulsionProjectImage">
+                        <img src="images/purpleBigItt.PNG" width="360" height="360" alt="Propulsion Mandelbrot Image">
+                        <h1 class="projectHeadersImages"><b>Propulsion</b></h1>
+                        <p>A self project aimed at studying CUDA and costly Numerical Operations</p>
+                    </div>
+                    </a>
 
-                    <h1 class="modalHeaderTitle">Matrix Dot Product<br></h1>
-                    <img src="images/matrixDotProductPerformance2.PNG" alt="Matrix Dot Product Performance" style="width:80%;height:80%;max-width:800px;">
-                    <p class="propulsionImageDescription">Image of original dot product tests with paged memory for all methods.</p>
+                <!-- The Modal -->
+                <div id="modalProjectPropulsion" class="modal">
 
-                    <p class="propulsionParagraph">     &emsp; Above are the results of a controlled dot product test on various 
-                            sized square matrices. You can see right away that the Naive CPU method is very slow for large matrices.
-                            I actually skipped the 16384x16384 test for CPU NAIVE as it would of took ~10 hours to complete. <br>
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1 class="modalHeaderTitle">Propulsion<br>
+                            <hr>
+                        </h1>
+
+                        <p class="propulsionParagraph">Repo Link: <a href="https://github.com/rottenroddan/Propulsion" style="color: gray;">https://github.com/rottenroddan/Propulsion</a></p>
+
+                        <img src="images/image_itt_1500.PNG" alt="Mandelbrot" style="width:80%; height:80%;max-width:800px;">
+                        <p class="propulsionImageDescription">Image of Mandelbrot above the main disk with period 8. Image was generated
+                                                            via the Mandelbrot class with 1500 iterations per pixel value. </p>
+
+
+                        <p class="propulsionParagraph">     &emsp; Propulsion, was a Numerical/CUDA project I started before my final semester in the fall
+                                of 2020. The project (being a self-project) has gone through many technical changes as more 
+                                research has been done on paticular subjects. Firstly, I'd like to mention this project is not
+                                meant to rival libraries like cuBLAS or Boost. It is simply created to apply my understanding, 
+                                analyze and research more about the numerical operations that have a huge impact in todays algorithms
+                                like Machine Learning/Artificial Intelligence. <br>
+
+                                &emsp; In the start, I was mostly focused on creating CUDA Kernels to solve simple matrix operations 
+                                like addition/subtraction/schurs product. As I got the hang of using CUDA from samples provided online,
+                                I started looking more at the numerical operations that would benefit Machine Learning the most. From this
+                                point on, I started creating a Matrix class with various methods to support numerical operations. This 
+                                class also uses smart pointers to handle memory. You can see more on my Github about all the various methods.<br>
+                        </p>
+
+                        <h1 class="modalHeaderTitle">Matrix Dot Product<br></h1>
+                        <img src="images/matrixDotProductPerformance2.PNG" alt="Matrix Dot Product Performance" style="width:80%;height:80%;max-width:800px;">
+                        <p class="propulsionImageDescription">Image of original dot product tests with paged memory for all methods.</p>
+
+                        <p class="propulsionParagraph">     &emsp; Above are the results of a controlled dot product test on various 
+                                sized square matrices. You can see right away that the Naive CPU method is very slow for large matrices.
+                                I actually skipped the 16384x16384 test for CPU NAIVE as it would of took ~10 hours to complete. <br>
+                                
+                                &emsp; Importantly, note while Strassen Multiplication was beat in all cases against CUDA, it has better
+                                time complexity than CUDA as it requires less multiplications than the naive method. You can 
+                                see that in theory, this method is much faster. However, the results are skewed as the Strassen Method only uses
+                                7 threads at any given time. While CUDA is 1024 light-weight threads... Even the testing data is suited well
+                                for Strassen multiplication, as they're all square matrices of 2^N size, which allows for no time spent padding
+                                the matrix to an even number or rows/cols. <br>
+
+                                &emsp; As of 3/17/2021, I have successfully updated the Matrix class to handle paged memory allocations and
+                                pinned memory allocations using unique_ptr to handle the lifetime of the Matrix itself. Originally after
+                                refactoring my code, it seemed that CUDA pinned memory wasn't disadvantageous as I thought, until methods
+                                like Strassen Multiplication were tested upon. Since I was using to cudaMallocHost to allocate an array, which
+                                is notoriously slow if called frequently, this created the below results: <br> 
+                        </p>
+
+                        <img src="images/matrixDotProductPerformancePinnedMemoryFirstV2.PNG" alt="Mandelbrot GIF of Various Iterations." style="width:80%;height:80%;max-width:800px;">
+                        <p class="propulsionImageDescription">Image of dot product tests with pinned memory for all methods.</p>
+
+                        <p class="propulsionParagraph">     &emsp; Above, you can see the difference that pinned memory had on the Strassen
+                            dot product. The naive CPU method is much faster even though it has worse time complexity. This is due to 
+                            cudaMallocHost being called many times since this method relies on Matrix Constructors to allocate more memory. 
+                            This prompted me with another design change, which is to incorporate pinned memory and paged memory in this class. 
+                            The Matrix class would inherently be pinned memory, unless specified as paged via a parameter in the constructor.
+                            Results with Paged for CPU and Pinned for CUDA below: <br>
+                        </p>
+
+
+                        <p class="propulsionParagraph">     &emsp; I have future plans to return to Matrix Dot Product to further optimize the CUDA kernels as the naive
+                                kernel does not take full advantage of the my GPU as other sources suggest. 
+                        </p>
+
+                        <h1 class="modalHeaderTitle">Tensor Operations<br></h1>
+
+                        <p class="propulsionParagraph">     &emsp;This class is currently mostly work in progress. Uses packed template arguments to allow
+                            the user to build an any size dimension tensor. The tensor class contains a container which holds unique pointers to
+                            Matrices. Since the operations I'm dealing with, I found it beneficial to just reuse the Matrix class rather than 
+                            creating a new array of values. <br>
+                            &emsp; Firstly, I was able to utilize CUDA's streams to create async copies and kernel launches. Along with less overhead, 
+                            Tensor::cudaAdd was able to achieve a 3x performance gain on my original implementations. Below you can see the Nsight data. 
+                            For the first ~40s, 6 additions are done on two Tensors of size (5.76GB). This naive method doesn't use streams, and therefore 
+                            a lot of time is wasted on non-sync memory transfers. From 41s on, streams is enabled for 6 Additions of the same 5.76GB 
+                            of data. This method is clearly faster as the 6 additions finish in 13s vs ~40s. You can see more on my Github on how I implemented this!    
+                        </p>
+
+                        <img src="images/tensorAdditionStreamVsNonStreamOne.PNG" style="width:80%;height:80%;max-width:1200px;">
+
+                        <h1 class="modalHeaderTitle">Mandelbrot Set<br></h1>
+                        <img src="images/Webp.net-gifmaker.gif" alt="Mandelbrot GIF of Various Iterations." style="width:80%;height:80%;max-width:800px;">
+                        <p class="propulsionImageDescription">The above image starts from 125 itterations -> 250 -> 500 -> 1,000 -> 1,500 -> 2,000 -> 5,000 -> 10,000 ->
+                                20,000.</p>
+
+                        <p class="propulsionParagraph">     &emsp; Propulsion also has another class "Mandelbrot", which is a simple class
+                                that uses the Matrix class I designed to help implement a visualization of the Mandelbrot set on windows.h
+                                API. This part of the project was more of showing off the various optimizations I could perform
+                                on the Mandelbrot Set using CPU driven SIMD instructions(AVX2 in my case). <br>
+
+                                &emsp; Above, you can see the Mandelbrot change from smeared shades of colors to more fine in detail. Due to 
+                                total calculations per pixel in the Mandelset is increased, thus getting a more accurate depiction of the 
+                                fractal. This part of the project was just a for fun topic I always wanted to learn how to implement. Below are
+                                the performances for various methods of calculating.<br>
+                        </p>   
+
+                        <table id="mandelbrotPerformance">
+                            <tr>
+                                <th>Compute Method</th>
+                                <th>Avg Time To Complete</th>
+                                <th>Iterations Per Pixel</th>
+
+                            </tr>
+                            <tr>
+                                <td>1 Thread Naive</td>
+                                <td>3.121s</td>
+                                <td>10K</td>
+                            </tr>
+                            <tr>
+                                <td>1 Thread AVX2</td>
+                                <td>1.083s</td>
+                                <td>10K</td>
+                            </tr>
+                            <tr>
+                                <td>8 Thread AVX2</td>
+                                <td>0.543s</td>
+                                <td>10K</td>
+                            </tr>
+                            <tr>
+                                <td>16 Thread AVX2</td>
+                                <td>0.350s</td>
+                                <td>10K</td>
+                            </tr>
+                            <tr>
+                                <td>CUDA</td>
+                                <td>0.040s</td>
+                                <td>10K</td>
+                            </tr>
                             
-                            &emsp; Importantly, note while Strassen Multiplication was beat in all cases against CUDA, it has better
-                            time complexity than CUDA as it requires less multiplications than the naive method. You can 
-                            see that in theory, this method is much faster. However, the results are skewed as the Strassen Method only uses
-                            7 threads at any given time. While CUDA is 1024 light-weight threads... Even the testing data is suited well
-                            for Strassen multiplication, as they're all square matrices of 2^N size, which allows for no time spent padding
-                            the matrix to an even number or rows/cols. <br>
 
-                            &emsp; As of 3/17/2021, I have successfully updated the Matrix class to handle paged memory allocations and
-                            pinned memory allocations using unique_ptr to handle the lifetime of the Matrix itself. Originally after
-                            refactoring my code, it seemed that CUDA pinned memory wasn't disadvantageous as I thought, until methods
-                            like Strassen Multiplication were tested upon. Since I was using to cudaMallocHost to allocate an array, which
-                            is notoriously slow if called frequently, this created the below results: <br> 
-                    </p>
+                        </table>
 
-                    <img src="images/matrixDotProductPerformancePinnedMemoryFirstV2.PNG" alt="Mandelbrot GIF of Various Iterations." style="width:80%;height:80%;max-width:800px;">
-                    <p class="propulsionImageDescription">Image of dot product tests with pinned memory for all methods.</p>
+                        <p class="propulsionParagraph">
+                                &emsp; The above tests were generated on a zoomed part on the main bulb. Results vary greatly depending on the position of
+                                of the Mandelbrot set, as some groups of pixels are finished in less clock cycles than others. Ran on a i9-9900k and Nvidia 2080ti.<br>
+                                &emsp; Mandelbrot could get a ridiculous speed increase if I chose to use OpenGL to render the image on screen, 
+                                as currently it is being calculated on CUDA, then copied back to host, which then uses Windows to draw the image
+                                on the screen. <br>
 
-                    <p class="propulsionParagraph">     &emsp; Above, you can see the difference that pinned memory had on the Strassen
-                        dot product. The naive CPU method is much faster even though it has worse time complexity. This is due to 
-                        cudaMallocHost being called many times since this method relies on Matrix Constructors to allocate more memory. 
-                        This prompted me with another design change, which is to incorporate pinned memory and paged memory in this class. 
-                        The Matrix class would inherently be pinned memory, unless specified as paged via a parameter in the constructor.
-                        Results with Paged for CPU and Pinned for CUDA below: <br>
-                    </p>
+                                &emsp; 
+                        </p>
 
-
-                    <p class="propulsionParagraph">     &emsp; I have future plans to return to Matrix Dot Product to further optimize the CUDA kernels as the naive
-                            kernel does not take full advantage of the my GPU as other sources suggest. 
-                    </p>
-
-                    <h1 class="modalHeaderTitle">Tensor Operations<br></h1>
-
-                    <p class="propulsionParagraph">     &emsp;This class is currently mostly work in progress. Uses packed template arguments to allow
-                        the user to build an any size dimension tensor. The tensor class contains a container which holds unique pointers to
-                        Matrices. Since the operations I'm dealing with, I found it beneficial to just reuse the Matrix class rather than 
-                        creating a new array of values. <br>
-                        &emsp; Firstly, I was able to utilize CUDA's streams to create async copies and kernel launches. Along with less overhead, 
-                        Tensor::cudaAdd was able to achieve a 3x performance gain on my original implementations. Below you can see the Nsight data. 
-                        For the first ~40s, 6 additions are done on two Tensors of size (5.76GB). This naive method doesn't use streams, and therefore 
-                        a lot of time is wasted on non-sync memory transfers. From 41s on, streams is enabled for 6 Additions of the same 5.76GB 
-                        of data. This method is clearly faster as the 6 additions finish in 13s vs ~40s. You can see more on my Github on how I implemented this!    
-                    </p>
-
-                    <img src="images/tensorAdditionStreamVsNonStreamOne.PNG" style="width:80%;height:80%;max-width:1200px;">
-
-                    <h1 class="modalHeaderTitle">Mandelbrot Set<br></h1>
-                    <img src="images/Webp.net-gifmaker.gif" alt="Mandelbrot GIF of Various Iterations." style="width:80%;height:80%;max-width:800px;">
-                    <p class="propulsionImageDescription">The above image starts from 125 itterations -> 250 -> 500 -> 1,000 -> 1,500 -> 2,000 -> 5,000 -> 10,000 ->
-                            20,000.</p>
-
-                    <p class="propulsionParagraph">     &emsp; Propulsion also has another class "Mandelbrot", which is a simple class
-                            that uses the Matrix class I designed to help implement a visualization of the Mandelbrot set on windows.h
-                            API. This part of the project was more of showing off the various optimizations I could perform
-                            on the Mandelbrot Set using CPU driven SIMD instructions(AVX2 in my case). <br>
-
-                            &emsp; Above, you can see the Mandelbrot change from smeared shades of colors to more fine in detail. Due to 
-                            total calculations per pixel in the Mandelset is increased, thus getting a more accurate depiction of the 
-                            fractal. This part of the project was just a for fun topic I always wanted to learn how to implement. Below are
-                            the performances for various methods of calculating.<br>
-                     </p>   
-
-                     <table id="mandelbrotPerformance">
-                        <tr>
-                            <th>Compute Method</th>
-                            <th>Avg Time To Complete</th>
-                            <th>Iterations Per Pixel</th>
-
-                        </tr>
-                        <tr>
-                            <td>1 Thread Naive</td>
-                            <td>3.121s</td>
-                            <td>10K</td>
-                        </tr>
-                        <tr>
-                            <td>1 Thread AVX2</td>
-                            <td>1.083s</td>
-                            <td>10K</td>
-                        </tr>
-                        <tr>
-                            <td>8 Thread AVX2</td>
-                            <td>0.543s</td>
-                            <td>10K</td>
-                        </tr>
-                        <tr>
-                            <td>16 Thread AVX2</td>
-                            <td>0.350s</td>
-                            <td>10K</td>
-                        </tr>
-                        <tr>
-                            <td>CUDA</td>
-                            <td>0.040s</td>
-                            <td>10K</td>
-                        </tr>
                         
-
-                     </table>
-
-                     <p class="propulsionParagraph">
-                            &emsp; The above tests were generated on a zoomed part on the main bulb. Results vary greatly depending on the position of
-                            of the Mandelbrot set, as some groups of pixels are finished in less clock cycles than others. Ran on a i9-9900k and Nvidia 2080ti.<br>
-                            &emsp; Mandelbrot could get a ridiculous speed increase if I chose to use OpenGL to render the image on screen, 
-                            as currently it is being calculated on CUDA, then copied back to host, which then uses Windows to draw the image
-                            on the screen. <br>
-
-                            &emsp; 
-                    </p>
-
-                    
-                </div>
-            </div> 
+                    </div>
+                </div> 
 
 
 
 
 
-        </div>
+            </div>
 
-        <script>
-                        // Get the modal
-            var modal = document.getElementById("modalProjectPropulsion");
+            <script>
+                            // Get the modal
+                var modal = document.getElementById("modalProjectPropulsion");
 
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
 
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
 
-            // When the user clicks on the button, open the modal
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
+                // When the user clicks on the button, open the modal
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
 
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
                     modal.style.display = "none";
                 }
-            } 
-        </script>
-    </div>
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                } 
+            </script>
+        </div>
+    </div>    
 </body>
 
 
