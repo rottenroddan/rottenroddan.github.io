@@ -3,6 +3,9 @@
 <link rel="stylesheet" href="css/style.css">
 <body>
     <div class="firstLastNameDiv">
+        <div class="firstLastNameAvatar">
+            <img src="images/graduation.jpg" alt="Picture of Me" class="avatarPicture">
+        </div>
         <h1 class="firstLastName" id="firstLastName">Welcome, I'm Steven Roddan</h1>
         <h2 class="firstLastNameSummary">I'm an up and coming software engineer interested
                                         in Operating Systems, Machine Learning and Numerical
@@ -26,26 +29,24 @@
             </div>
 
             <div class="aboutMeSkillsContainer">
-                
-
                 <div class="aboutMeSkillOne">
                     <img src="images/lightbulb.png" alt="Lightbulb" class="aboutMeSkillOneImage">
-                    <h1 class="aboutMeSkillOneText">Problem Solver</h1>
+                    <h1 class="aboutMeSkillText">Problem Solver</h1>
                 </div>
 
                 <div class="aboutMeSkillTwo">
                     <img src="images/clock.png" alt="Clock" class="aboutMeSkillTwoImage">
-                    <h1 class="aboutMeSkillTwoText">Multitasking</h1>
+                    <h1 class="aboutMeSkillText">Multitasking</h1>
                 </div>
 
                 <div class="aboutMeSkillThree">
                     <img src="images/graph.png" alt="Graph To Represent Objects" class="aboutMeSkillThreeImage">
-                    <h1 class="aboutMeSkillThreeText">OOAD</h1>
+                    <h1 class="aboutMeSkillText">OOAD</h1>
                 </div>
 
                 <div class="aboutMeSkillFour">
                     <img src="images/teamwork.png" alt="Gears for Teamwork" class="aboutMeSkillFourImage">
-                    <h1 class="aboutMeSkillFourText">Teamwork</h1>
+                    <h1 class="aboutMeSkillText">Teamwork</h1>
                 </div>
             </div>
 
@@ -78,8 +79,8 @@
                 <h1 class="aboutMeHeader">Skills<br></h1>
                 <p class="aboutMeParagraph">
                     <b>Proficient Languages:</b> C++(std, ~CUDA), Python(Numpy, Tensorflow/Keras), PHP,
-                        MYSQL(MariaDB).<br>
-                    <b>Familiar Languages:</b> Java, R, Javascript(jQuery), HTML/CSS. Julia, Assembly.<br>
+                        MYSQL.<br>
+                    <b>Familiar Languages:</b> Java, C#, R, Javascript, Julia, Assembly.<br>
                     <b>Operating Systems:</b> Windows, Linux/Ubuntu.<br>
                     <b>Developement tools:</b> Github, Visual Studio Code, CLion, phpMyAdmin, PuTTY.<br>
                     <b>Soft Skills:</b> Problem Solving, Motivation, Dependability, Positivity.
@@ -95,36 +96,130 @@
             </div>
 
             <div class = "projectLinks">
-
-
-
                 <!-- Trigger/Open The Modal -->
-                <a class="projectLinksHREF" id="myBtn" href="#projectsContainer">
-                    <div class="propulsionProjectImage">
-                        <img src="images/purpleBigItt.PNG" width="360" height="360" alt="Propulsion Mandelbrot Image">
+                <a class="projectLinksHREF" id="propulsionBtn" href="#projectsContainerLink">
+                    <div class="projectBox">
+                        <img src="images/purpleBigItt.PNG" class="projectImages" alt="Propulsion Mandelbrot Image">
                         <h1 class="projectHeadersImages"><b>Propulsion</b></h1>
-                        <p>A self project aimed at studying CUDA and costly Numerical Operations</p>
+                        <p class="projectParagraphHeader">A self project aimed at studying CUDA and costly Numerical Operations.</p>
                     </div>
-                    </a>
+                </a>
 
-                <!-- The Modal -->
-                <div id="modalProjectPropulsion" class="modal">
+                <a class="projectLinksHREF" id="marketStdDevBtn" href="#projectsContainerLink">
+                    <div class="projectBox">
+                        <img src="images/marketStdDev.PNG" class="projectImages" alt="Market Std Deviation Image">
+                        <h1 class="projectHeadersImages"><b>Market StdDev</b></h1>
+                        <p class="projectParagraphHeader">A self project for calculating the Standard Deviation across 5000+ companies stocks.</p>
+                    </div>
+                </a>
 
-                    <!-- Modal content -->
+                <a class="projectLinksHREF" id="redBlackTreeBtn" href="#projectsContainerLink">
+                    <div class="projectBox">
+                        <img src="images/redBlackTree.PNG" class="projectImages" alt="Market Std Deviation Image">
+                        <h1 class="projectHeadersImages"><b>RedBlack Tree</b></h1>
+                        <p class="projectParagraphHeader">Self-balancing Binary Search Tree with average log(n) for Search/Insert/Delete. </p>
+                    </div>
+                </a>
+
+                <div id="modalProjectsRedBlackTree" class="modal">
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <h1 class="modalHeaderTitle">Propulsion<br>
+                        <h1 class="modalHeaderTitle">
+                            Red Black Tree<br>
                             <hr>
                         </h1>
 
-                        <p class="propulsionParagraph">Repo Link: <a href="https://github.com/rottenroddan/Propulsion" style="color: gray;">https://github.com/rottenroddan/Propulsion</a></p>
+                        <p class="projectParagraph">Repo Link: <a href="https://github.com/rottenroddan/redBlackTree" style="color: gray;">https://github.com/rottenroddan/redBlackTree</a></p>
+
+                        <img src="images/red-black-tree-diagram.png" alt="Red Black Tree Diagram" style="width:40%; height:40%;max-width:400px;">
+
+                        <p class="projectParagraph">    &emsp; A project I started for fun after I graduated from College. Binary Search
+                                Trees have always interested me since I learned about them in an algorithms course. The Red Black Tree was 
+                                a good challenge programming as far as testing and debugging.  </p>
+
+                        <h1 class="modalHeaderTitle">Features<br>
+                        </h1>
+
+                        <p class="projectParagraph">    &emsp; This project is like a standard Binary Search Tree from a general usage stance. Includes
+                                all the standard functions of one like: Insert, Delete, and Search. Under the hood of this Binary Search Tree is the 
+                                behavior of a Red Black Tree which is self-balancing. The worst time complexity for any of the methods is log(n). <br>
+                                    &emsp; Overall this project was relatively easy. Implementing the delete method was the most difficult part of
+                                this project due to many different edge cases to keep the tree self-balancing. <br>
+                                    &emsp; As I stated on the repo page, if one is to actually use this, I would recommend using C++'s built in Map
+                                or Set if you're looking for performance and reliability. 
+                        </p>
+                    </div>
+                </div>
+
+                <div id="modalProjectStdDevMarket" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1 class="modalHeaderTitle">
+                            Market Standard Deviation<br>
+                            <hr>
+                        </h1>
+
+                        <p class="projectParagraph">Repo Link: <a href="https://github.com/rottenroddan/MarketStdDeviationCalculator" style="color: gray;">https://github.com/rottenroddan/MarketStdDeviationCalculator</a></p>
+                    
+                        <img src="images/marketStdDev.PNG" alt="Output of Tickers Std Dev from Norm" style="width: 35%; max-width: 400px;">
+
+                        <p class="projectParagraph">    &emsp; Market Std Deviation Calculator is a simple C++ program designed to 
+                                calculate from over 5000 companies their current Standard Deviation from their normal line. It was a 
+                                project I wanted to implement to get experience with C++ API calls using the cURL library and also as
+                                another tool to aid me with finding companies that are deviating towards their lows. 
+                        </p>
+
+                        <h1 class="modalHeaderTitle">Features<br>
+                        </h1>
+                        <p class="projectParagraph">    &emsp; This program has one main feature, along with two other settings to help maintain
+                                accurate stock data. The main feature is to calculate the Standard Deviation from all the tickers included
+                                in the tickers directory. These files contain all the candle information for their respective ticker file 
+                                name. The last part of this feature is displaying the top results of the tickers that are deviating below 
+                                their normal line. Along with displaying how much in order these stocks are deviating. <br>
+                                
+                                &emsp; The last two features are for maintaining the stock data. The first one is generating ticker 
+                                files from TDAmeritrades API. This requires a developer key you will need to get from them. This is 
+                                limited as the key is free and not payed for, so for this function to run, it takes roughly an hour
+                                to generate data for 5000 stocks since the API calls are limited to 60/min. The last feature is a 
+                                simple "try to fix" ticker. It goes through the directory and looks for any files that may be empty. 
+                                When I was testing, some(very few) of the API calls were coming back empty handed. Either due a heavy
+                                load on the backend or some inconsistent problem on my end. Therefore the this function looks for empty 
+                                files and tries to fix them. Most tickers that had empty files aren't available on TDA so hence their 
+                                data doesn't exist from the tickers.txt file. 
+                        </p>
+
+                        <h1 class="modalHeaderTitle">Future</h1>
+                        <p class="projectParagraph">    &emsp; For the most part, this project is wrapped up. I might comeback and use this
+                                projects data as an example of Machine Learning on the Propulsion project, but overall that would just be 
+                                using bits from this project rather than the data generated on its main goal. The goal of project was 
+                                achieved, therefore I am happy with it, as far as keeping the code neat and efficient and to the point.<br>
+
+                                &emsp; I definitely feel using C++ for this was wasteful, as Python would of been the best choice for this 
+                                small project. However I knew that from the start knowing the goal was learning how to incorporate a static 
+                                linked library like cURL.    
+                        </p>
+                    </div>
+                </div> 
+
+                <!-- Propulsion Modal -->
+                <div id="modalProjectPropulsion" class="modal">
+
+                    <!-- Propulsion Modal Content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1 class="modalHeaderTitle">
+                            Propulsion<br>
+                            <hr>
+                        </h1>
+
+                        <p class="projectParagraph">Repo Link: <a href="https://github.com/rottenroddan/Propulsion" style="color: gray;">https://github.com/rottenroddan/Propulsion</a></p>
 
                         <img src="images/image_itt_1500.PNG" alt="Mandelbrot" style="width:80%; height:80%;max-width:800px;">
                         <p class="propulsionImageDescription">Image of Mandelbrot above the main disk with period 8. Image was generated
                                                             via the Mandelbrot class with 1500 iterations per pixel value. </p>
 
 
-                        <p class="propulsionParagraph">     &emsp; Propulsion, was a Numerical/CUDA project I started before my final semester in the fall
+                        <p class="projectParagraph">     &emsp; Propulsion, was a Numerical/CUDA project I started before my final semester in the fall
                                 of 2020. The project (being a self-project) has gone through many technical changes as more 
                                 research has been done on paticular subjects. Firstly, I'd like to mention this project is not
                                 meant to rival libraries like cuBLAS or Boost. It is simply created to apply my understanding, 
@@ -142,7 +237,7 @@
                         <img src="images/matrixDotProductPerformance2.PNG" alt="Matrix Dot Product Performance" style="width:80%;height:80%;max-width:800px;">
                         <p class="propulsionImageDescription">Image of original dot product tests with paged memory for all methods.</p>
 
-                        <p class="propulsionParagraph">     &emsp; Above are the results of a controlled dot product test on various 
+                        <p class="projectParagraph">     &emsp; Above are the results of a controlled dot product test on various 
                                 sized square matrices. You can see right away that the Naive CPU method is very slow for large matrices.
                                 I actually skipped the 16384x16384 test for CPU NAIVE as it would of took ~10 hours to complete. <br>
                                 
@@ -163,7 +258,7 @@
                         <img src="images/matrixDotProductPerformancePinnedMemoryFirstV2.PNG" alt="Mandelbrot GIF of Various Iterations." style="width:80%;height:80%;max-width:800px;">
                         <p class="propulsionImageDescription">Image of dot product tests with pinned memory for all methods.</p>
 
-                        <p class="propulsionParagraph">     &emsp; Above, you can see the difference that pinned memory had on the Strassen
+                        <p class="projectParagraph">     &emsp; Above, you can see the difference that pinned memory had on the Strassen
                             dot product. The naive CPU method is much faster even though it has worse time complexity. This is due to 
                             cudaMallocHost being called many times since this method relies on Matrix Constructors to allocate more memory. 
                             This prompted me with another design change, which is to incorporate pinned memory and paged memory in this class. 
@@ -172,13 +267,13 @@
                         </p>
 
 
-                        <p class="propulsionParagraph">     &emsp; I have future plans to return to Matrix Dot Product to further optimize the CUDA kernels as the naive
+                        <p class="projectParagraph">     &emsp; I have future plans to return to Matrix Dot Product to further optimize the CUDA kernels as the naive
                                 kernel does not take full advantage of the my GPU as other sources suggest. 
                         </p>
 
                         <h1 class="modalHeaderTitle">Tensor Operations<br></h1>
 
-                        <p class="propulsionParagraph">     &emsp;This class is currently mostly work in progress. Uses packed template arguments to allow
+                        <p class="projectParagraph">     &emsp;This class is currently mostly work in progress. Uses packed template arguments to allow
                             the user to build an any size dimension tensor. The tensor class contains a container which holds unique pointers to
                             Matrices. Since the operations I'm dealing with, I found it beneficial to just reuse the Matrix class rather than 
                             creating a new array of values. <br>
@@ -196,7 +291,7 @@
                         <p class="propulsionImageDescription">The above image starts from 125 itterations -> 250 -> 500 -> 1,000 -> 1,500 -> 2,000 -> 5,000 -> 10,000 ->
                                 20,000.</p>
 
-                        <p class="propulsionParagraph">     &emsp; Propulsion also has another class "Mandelbrot", which is a simple class
+                        <p class="projectParagraph">     &emsp; Propulsion also has another class "Mandelbrot", which is a simple class
                                 that uses the Matrix class I designed to help implement a visualization of the Mandelbrot set on windows.h
                                 API. This part of the project was more of showing off the various optimizations I could perform
                                 on the Mandelbrot Set using CPU driven SIMD instructions(AVX2 in my case). <br>
@@ -243,7 +338,7 @@
 
                         </table>
 
-                        <p class="propulsionParagraph">
+                        <p class="projectParagraph">
                                 &emsp; The above tests were generated on a zoomed part on the main bulb. Results vary greatly depending on the position of
                                 of the Mandelbrot set, as some groups of pixels are finished in less clock cycles than others. Ran on a i9-9900k and Nvidia 2080ti.<br>
                                 &emsp; Mandelbrot could get a ridiculous speed increase if I chose to use OpenGL to render the image on screen, 
@@ -264,29 +359,49 @@
             </div>
 
             <script>
-                            // Get the modal
-                var modal = document.getElementById("modalProjectPropulsion");
+                // Get the modal
+                var propulsionModal = document.getElementById("modalProjectPropulsion");
+                var marketStdDevModal = document.getElementById("modalProjectStdDevMarket");
+                var redBlackTreeModal = document.getElementById("modalProjectsRedBlackTree");
 
                 // Get the button that opens the modal
-                var btn = document.getElementById("myBtn");
+                var propulsionBtn = document.getElementById("propulsionBtn");
+                var marketStdDevBtn = document.getElementById("marketStdDevBtn");
+                var redBlackTreeBtn = document.getElementById("redBlackTreeBtn");
 
                 // Get the <span> element that closes the modal
                 var span = document.getElementsByClassName("close")[0];
 
                 // When the user clicks on the button, open the modal
-                btn.onclick = function() {
-                    modal.style.display = "block";
+                propulsionBtn.onclick = function() {
+                    propulsionModal.style.display = "block";
+                }
+
+                marketStdDevBtn.onclick = function() {
+                    marketStdDevModal.style.display = "block";
+                }
+
+                redBlackTreeBtn.onclick = function() {
+                    redBlackTreeModal.style.display = "block";
                 }
 
                 // When the user clicks on <span> (x), close the modal
                 span.onclick = function() {
-                    modal.style.display = "none";
+                    propulsionModal.style.display = "none";
+                    marketStdDevModal.style.display = "none";
+                    redBlackTreeModal.style.display = "none";
                 }
 
                 // When the user clicks anywhere outside of the modal, close it
                 window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
+                    if (event.target == propulsionModal) {
+                        propulsionModal.style.display = "none";
+                    }
+                    if (event.target == marketStdDevModal) {
+                        marketStdDevModal.style.display = "none";
+                    }
+                    if(event.target == redBlackTreeModal) {
+                        redBlackTreeModal.style.display = "none";
                     }
                 } 
             </script>
